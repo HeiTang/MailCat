@@ -12,7 +12,8 @@ var Bank = [
       "Service@edm2.cathaysec.com.tw", 
       "service@news.mybank.com.tw", 
       "etrade@cathaysec.com.tw", 
-      "cathaybk@news.mybank.com.tw"
+      "cathaybk@news.mybank.com.tw",
+      "Service@edm1.cathaysec.com.tw"
     ]
   },
   {
@@ -61,7 +62,8 @@ var Bank = [
       "webmaster@taishinbank.com.tw",
       "richart@richart.tw",
       "AclinkMail@taishinbank.com.tw",
-      "TSB@mhurcv.taishinbank.com.tw"
+      "TSB@mhurcv.taishinbank.com.tw",
+      "acsotp_code@taishinbank.com.tw"
     ]
   },
   {
