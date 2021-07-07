@@ -2,9 +2,6 @@ var Main_list = ['0.登入通知', '1.交易通知', '2.電子帳單'];
 var Main_Rules = ['subject:(登入成功通知 OR 登入失敗通知 OR 成功登入 OR 密碼連續錯誤2次通知 OR 密碼錯誤通知 OR 登入通知 OR 登入安全性通知)',
                   'subject:(交易結果通知 OR 入帳通知 OR 繳款通知 OR 消費通知 OR 交易提領成功 OR 交易成功通知 OR 付款成功通知 OR 提領通知 OR 交易訊息通知 OR 交易通知 OR 交易扣款 OR 成交回報)',
                   'subject:(綜合對帳單 OR 電子帳單 OR 電子對帳單 OR 月對帳單 OR 日對帳單 OR 消費對帳單) -{繳款通知 OR 入帳通知}'];
- 
-function Test(){
-}
 
 // 0. Main
 function Main(){
@@ -81,28 +78,30 @@ function MainLabel(Label, Rule, i){
 function AutoRemove(){
   // 0. 登入通知
   var days = 10;
-  var rule = "older_than:" + days + "d label:0.登入通知";
+  var rule = 'older_than:' + days + 'd label:' + Main_list[0];
   var threads = GmailApp.search(rule);
   for (var i = 0; i < threads.length; i++) {
     threads[i].moveToTrash();
   }
+  Logger.log('+ 3. 已刪除「' + Main_list[0] + '」中 ' + days + ' 天前的信件（' + threads.length + '）');
 }
 
 // Feature IV: 自動封存信件（登入通知、交易通知）
 function AutoArchive(){
-  var rule = "is:read label:(" + Main_list[0] + " OR " + Main_list[1] +")";
+  var rule = 'is:read {label:' + Main_list[0] + ' label:' + Main_list[1] + '}';
   var threads = GmailApp.search(rule);
   for (var i = 0; i < threads.length; i++) {
     threads[i].moveToArchive();
   }
+  Logger.log('+ 4. 已封存「' + Main_list[0] + '」和「' + Main_list[1] + '」的信件（' + threads.length + '）');
 }
 
 // Feature V: 備份附件（電子帳單）
 function AutoSave(){
   var FolderName = '銀行電子帳單';
+  Logger.log('+ 5. 檢查雲端資料夾（' + FolderName + '）是否存在');
   var ParentFolder = GetFolder_(FolderName);
-  // var rule = "is:important label:(" + Main_list[2] +")";
-  var rule = "is:important label:(銀行-2.-電子帳單)";
+  var rule = 'is:important label:' + Main_list[2];
   var threads = GmailApp.search(rule);
   for (var i = 0; i < threads.length; i++) {
     var messages = threads[i].getMessages();
@@ -114,7 +113,7 @@ function AutoSave(){
         var file = DriveApp.createFile(attachmentBlob);
         file.setName(subjectName);
         file.moveTo(ParentFolder);
-        Logger.log(subjectName);
+        Logger.log("+ 5. " + Main_list[2] + '（' + subjectName + "）已完成備份");
       //}
     } 
     threads[i]. markUnimportant();
@@ -126,9 +125,12 @@ function GetFolder_(FolderName){
   var fi = DriveApp.getFoldersByName(FolderName);
   if (fi.hasNext()){
     Folder = fi.next();
+    Logger.log('+ 5. 雲端資料夾（' + FolderName + '）已存在');
   }
   else{
+    Logger.log('- 5. 雲端資料夾（' + FolderName + '）不存在 建立中...');
     Folder = DriveApp.createFolder(FolderName);
+    Logger.log('+ 5. 雲端資料夾（' + FolderName + '）已建立');
   }
   return Folder;
 }
