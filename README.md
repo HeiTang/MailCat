@@ -33,13 +33,13 @@
 
 ## 使用方法
 1. 首先，Clone 此專案。
-```
-git clone https://github.com/HeiTang/MailCat.git
-```
+    
+    ```
+    git clone https://github.com/HeiTang/MailCat.git
+    ```
 
-2. 登入 Google 帳戶並且開啟 Apps Script 頁面。
-   - https://script.google.com/home/start
+2. 登入 Google 帳戶並且開啟 [Apps Script](https://script.google.com/home/start) 頁面。 
 
-3. 建立新專案，然後將 `.ga` 檔案複製進去並存檔。
+3. 建立新專案，然後將 `.gs` 檔案複製進去並存檔。
 
-4. 至「觸發條件」點選「新增觸發條件」。
+4. 選擇「觸發條件」點選「新增觸發條件」。
