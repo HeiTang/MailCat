@@ -101,7 +101,7 @@ function AutoSave(){
   var FolderName = '銀行電子帳單';
   Logger.log('+ 5. 檢查雲端資料夾（' + FolderName + '）是否存在');
   var ParentFolder = GetFolder_(FolderName);
-  var rule = 'is:important label:' + Main_list[2];
+  var rule = 'has:attachment is:important label:' + Main_list[2];
   var threads = GmailApp.search(rule);
   for (var i = 0; i < threads.length; i++) {
     var messages = threads[i].getMessages();
