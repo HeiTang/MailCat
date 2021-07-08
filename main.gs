@@ -88,7 +88,7 @@ function AutoRemove(){
 
 // Feature IV: 自動封存信件（登入通知、交易通知）
 function AutoArchive(){
-  var rule = 'is:read {label:' + Main_list[0] + ' label:' + Main_list[1] + '}';
+  var rule = 'in:inbox is:read {label:' + Main_list[0] + ' label:' + Main_list[1] + '}';
   var threads = GmailApp.search(rule);
   for (var i = 0; i < threads.length; i++) {
     threads[i].moveToArchive();
