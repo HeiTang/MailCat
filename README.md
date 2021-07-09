@@ -1,6 +1,11 @@
 # MailCat
 
-## 描述
+[![GitHub License](https://img.shields.io/github/license/HeiTang/MailCat)]()
+[![GitHub Release](https://img.shields.io/github/v/release/HeiTang/MailCat?color=brightgreen)](https://github.com/HeiTang/MailCat/releases)
+[![GitHub Repo-Size](https://img.shields.io/github/repo-size/HeiTang/MailCat)]()
+[![GitHub TOP Languages](https://img.shields.io/github/languages/top/HeiTang/MailCat?color=ff69b4)]()
+
+
 MailCat 是一個以 Google Apps Scripts 開發的一套規則管理器。不同於以往需要使用者自行在設定中添加的篩選器，MailCat ~~直接讓你複製貼上就搞定~~，適合擁有多家網路銀行帳戶的人。
 
 ## 功能
