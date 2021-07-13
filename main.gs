@@ -116,7 +116,7 @@ function AutoSave(){
         Logger.log("+ 5. " + Main_list[2] + '（' + subjectName + "）已完成備份");
       //}
     } 
-    threads[i]. markUnimportant();
+    GmailApp.markThreadUnimportant(threads[i]);
   }
 }
 
