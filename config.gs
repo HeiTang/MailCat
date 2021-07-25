@@ -25,7 +25,8 @@ var Bank = [
       "stmnt@ubot.com.tw",
       "SystemSendMAIL@ubot.com.tw",
       "UBOTbank@nedm.ubot.com.tw",
-      "Mobile-Payment@ubot.com.tw"
+      "Mobile-Payment@ubot.com.tw",
+      "NewNewBank@ubot.com.tw"
     ]
   },
   {
