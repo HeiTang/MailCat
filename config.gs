@@ -26,7 +26,8 @@ var Bank = [
       "SystemSendMAIL@ubot.com.tw",
       "UBOTbank@nedm.ubot.com.tw",
       "Mobile-Payment@ubot.com.tw",
-      "NewNewBank@ubot.com.tw"
+      "NewNewBank@ubot.com.tw",
+      "UBOT@nedm.ubot.com.tw"
     ]
   },
   {
@@ -50,7 +51,8 @@ var Bank = [
       "ecapi@sinopac.com",
       "ebillservice@newebill.banksinopac.com.tw",
       "MMA@mx1.edm.sinopac.com",
-      "enews@mx1.edm.sinopac.com"
+      "enews@mx1.edm.sinopac.com",
+      "service.sec@sinopac.com"
     ]
   },
   {
@@ -73,7 +75,8 @@ var Bank = [
     "email":[
       "ebill@estats.ctbcbank.com",
       "bank.csc@inib.ctbcbank.com",
-      "bank.csc@inedm.ctbcbank.com"
+      "bank.csc@inedm.ctbcbank.com",
+      "ba.survey.inos@ctbcbank.com"
     ]
   },
   {
