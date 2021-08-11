@@ -52,7 +52,8 @@ var Bank = [
       "ebillservice@newebill.banksinopac.com.tw",
       "MMA@mx1.edm.sinopac.com",
       "enews@mx1.edm.sinopac.com",
-      "service.sec@sinopac.com"
+      "service.sec@sinopac.com",
+      "service.ec@epaper.sinotrade.com.tw"
     ]
   },
   {
