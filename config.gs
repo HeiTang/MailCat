@@ -53,7 +53,8 @@ var Bank = [
       "MMA@mx1.edm.sinopac.com",
       "enews@mx1.edm.sinopac.com",
       "service.sec@sinopac.com",
-      "service.ec@epaper.sinotrade.com.tw"
+      "service.ec@epaper.sinotrade.com.tw",
+      "return1.ec@epaper.sinotrade.com.tw"
     ]
   },
   {
