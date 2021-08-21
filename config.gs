@@ -1,5 +1,16 @@
 var Bank = [
   {
+    "name": "華南銀行",
+    "label_name": "008 華南銀行",
+    "domain_name": "hncb",
+    "email":[
+      "ebillmail@ebmail.hncb.com.tw",
+      "ebillmail@ms3.hncb.com.tw",
+      "service@ms3.hncb.com.tw",
+      "edmservice@hncb.com.tw"
+    ]
+  },
+  {
     "name": "國泰世華",
     "label_name": "013 國泰世華",
     "domain_name": "cathaybk",
