@@ -1,5 +1,5 @@
-var Bank = [
-  {
+{
+  "008": {
     "name": "華南銀行",
     "label_name": "008 華南銀行",
     "domain_name": "hncb",
@@ -10,7 +10,7 @@ var Bank = [
       "edmservice@hncb.com.tw"
     ]
   },
-  {
+  "013": {
     "name": "國泰世華",
     "label_name": "013 國泰世華",
     "domain_name": "cathaybk",
@@ -25,7 +25,7 @@ var Bank = [
       "Service@edm1.cathaysec.com.tw"
     ]
   },
-  {
+  "803": {
     "name": "聯邦銀行",
     "label_name": "803 聯邦銀行",
     "domain_name": "ubot",
@@ -41,7 +41,7 @@ var Bank = [
       "UBOT@nedm.ubot.com.tw"
     ]
   },
-  {
+  "805": {
     "name": "遠東銀行",
     "label_name": "805 遠東銀行",
     "domain_name": "feib",
@@ -52,7 +52,7 @@ var Bank = [
       "notice@feib.com.tw"
     ]
   },
-  {
+  "807": {
     "name": "永豐銀行",
     "label_name": "807 永豐銀行",
     "domain_name": "sinopac",
@@ -68,7 +68,7 @@ var Bank = [
       "return1.ec@epaper.sinotrade.com.tw"
     ]
   },
-  {
+  "812": {
     "name": "台新銀行",
     "label_name": "812 台新銀行",
     "domain_name": "taishinbank",
@@ -81,7 +81,7 @@ var Bank = [
       "acsotp_code@taishinbank.com.tw"
     ]
   },
-  {
+  "822": {
     "name": "中國信託",
     "label_name": "822 中國信託",
     "domain_name": "ctbcbank",
@@ -92,7 +92,7 @@ var Bank = [
       "ba.survey.inos@ctbcbank.com"
     ]
   },
-  {
+  "824": {
     "name": "連線銀行",
     "label_name": "824 連線銀行",
     "domain_name": "linebank",
@@ -101,4 +101,4 @@ var Bank = [
       "ebillservice@estatement.linebank.com.tw"
     ]
   }
-]
+}
