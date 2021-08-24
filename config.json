@@ -10,6 +10,15 @@
       "edmservice@hncb.com.tw"
     ]
   },
+  "009": {
+    "name": "彰化銀行",
+    "label_name": "009 彰化銀行",
+    "domain_name": "chb",
+    "email":[
+      "Web@mailservice.chb.com.tw",
+      "Web@notify.chb.com.tw"
+    ]
+  },
   "013": {
     "name": "國泰世華",
     "label_name": "013 國泰世華",
