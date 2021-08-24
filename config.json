@@ -34,6 +34,14 @@
       "Service@edm1.cathaysec.com.tw"
     ]
   },
+  "053": {
+    "name": "台中銀行",
+    "label_name": "053 台中銀行",
+    "domain_name": "tcbbank",
+    "email":[
+      "message@ebill.tcbbank.com.tw"
+    ]
+  },
   "700": {
     "name": "中華郵政",
     "label_name": "700 中華郵政",
