@@ -42,6 +42,14 @@
       "message@ebill.tcbbank.com.tw"
     ]
   },
+  "397": {
+    "name": "歐付寶",
+    "label_name": "397 歐付寶",
+    "domain_name": "opay",
+    "email":[
+      "sys@ns3.opay.tw"
+    ]
+  },
   "700": {
     "name": "中華郵政",
     "label_name": "700 中華郵政",
