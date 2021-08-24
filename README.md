@@ -1,12 +1,27 @@
-# MailCat
+<div align="center">
+  <h1>MailCat</h1>
+  
+  <a href="https://github.com/HeiTang/MailCat/blob/main/LICENSE">
+    <img src="https://img.shields.io/github/license/HeiTang/MailCat?color=orange">
+  </a>
+  <a href="https://github.com/HeiTang/MailCat/releases">
+    <img src="https://img.shields.io/github/v/release/HeiTang/MailCat?color=brightgreen">
+  </a>
+  <a href="https://github.com/HeiTang/MailCat">
+    <img src="https://img.shields.io/github/repo-size/HeiTang/MailCat">
+  </a>
+  <a href="https://github.com/HeiTang/MailCat">
+    <img src="https://img.shields.io/github/stars/HeiTang/MailCat?color=ff69b4">
+  </a>
+  <br><br>
+  <img src="https://raw.githubusercontent.com/HeiTang/MailCat/main/demo/page.png">
+  <p>- - -</p>
+  <p><i>“ Gmail 自動化管理工具！ ”</i></p>
+</div>
 
-[![GitHub License](https://img.shields.io/github/license/HeiTang/MailCat)](https://github.com/HeiTang/MailCat/blob/main/LICENSE)
-[![GitHub Release](https://img.shields.io/github/v/release/HeiTang/MailCat?color=brightgreen)](https://github.com/HeiTang/MailCat/releases)
-[![GitHub Repo-Size](https://img.shields.io/github/repo-size/HeiTang/MailCat)](https://github.com/HeiTang/MailCat/)
-[![GitHub TOP Languages](https://img.shields.io/github/languages/top/HeiTang/MailCat?color=ff69b4)](https://github.com/HeiTang/MailCat/)
+## 說明
 
-
-MailCat 是一個以 Google Apps Scripts 開發的一套規則管理器。不同於以往需要使用者自行在 Gmail 設定中添加的篩選器，MailCat ~~直接讓你複製貼上就搞定~~，適合擁有多家網路銀行帳戶的人。
+MailCat 是一個以 Google Apps Script 開發的一套規則管理器。不同於以往需要使用者自行在 Gmail 設定中添加的篩選器，MailCat ~~直接讓你複製貼上就搞定~~，適合擁有多家網路銀行帳戶的人。
 
 ## 功能
 ### 1. 標記銀行信件 🔖
@@ -39,37 +54,19 @@ MailCat 是一個以 Google Apps Scripts 開發的一套規則管理器。不同
 - MailCat 會將資料夾建立在 Google Drive 的根目錄下。
 
 ## 使用方法
-1. 首先，Clone 此專案。
+
+1. 登入 Google 帳戶並且開啟 [Apps Script](https://script.google.com/home/start) 頁面。 
+
+2. 建立新專案，然後將 [`main.gs`](https://github.com/HeiTang/MailCat/blob/main/main.gs) 檔案複製進去並存檔。
+
+3. 在 `main.gs` 中的 `Bank_Own` 中填入需管理的銀行代碼（請參考上述所支援銀行）。
+
+   範例：
     
     ```
-    git clone https://github.com/HeiTang/MailCat.git
+    var Bank_Own = ['008', '013', '803', '805', '807', '812', '822', '824'];
     ```
-
-2. 登入 Google 帳戶並且開啟 [Apps Script](https://script.google.com/home/start) 頁面。 
-
-3. 建立新專案，然後將 `.gs` 檔案複製進去並存檔。
-  
-  - config.gs：自行刪除不需要的銀行。
     
-    ```
-    var Bank = [
-      {
-        "name": "國泰世華",
-        "label_name": "013 國泰世華",
-        "domain_name": "cathaybk",
-        "email":[
-          "service@pxbillrc01.cathaybk.com.tw", 
-          "webservice@cathaybk.com.tw",
-          "e-notification@ebill1.cathaysec.com.tw", 
-          "Service@edm2.cathaysec.com.tw", 
-          "service@news.mybank.com.tw", 
-          "etrade@cathaysec.com.tw", 
-          "cathaybk@news.mybank.com.tw",
-          "Service@edm1.cathaysec.com.tw"
-        ]
-      },
-      (以下部份省略...)
-    ```
 4. 選擇「觸發條件」點選「新增觸發條件」。
 
     | 執行的功能 | 部署作業 | 活動來源 | 時間型觸發條件類型 | 小時間隔 | 
@@ -79,3 +76,5 @@ MailCat 是一個以 Google Apps Scripts 開發的一套規則管理器。不同
     | AutoArchive | 上端 | 時間驅動 | 小時計時器 | 每小時 |
     | AutoSave    | 上端 | 時間驅動 | 日計時器  | 午夜到上午一點 |
     > 參考設定，可自行調整。
+
+5. 如果尚未支援您的銀行，歡迎來發個 PR ~(=^‥^)/
