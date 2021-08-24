@@ -136,5 +136,13 @@
       "no-reply.ums@linebank.com.tw",
       "ebillservice@estatement.linebank.com.tw"
     ]
+  },
+  "PayPal": {
+    "name": "PayPal",
+    "label_name": "PayPal",
+    "domain_name": "paypal",
+    "email":[
+      "service@intl.paypal.com"
+    ]
   }
 }
