@@ -1,15 +1,22 @@
+// --- Settings --- //
+var Bank_Own = []
 var Main_list = ['0.登入通知', '1.交易通知', '2.電子帳單'];
 var Main_Rules = ['subject:(登入成功通知 OR 登入失敗通知 OR 成功登入 OR 密碼連續錯誤2次通知 OR 密碼錯誤通知 OR 登入通知 OR 登入安全性通知)',
                   'subject:(交易結果通知 OR 入帳通知 OR 繳款通知 OR 消費通知 OR 交易提領成功 OR 交易成功通知 OR 付款成功通知 OR 提領通知 OR 交易訊息通知 OR 交易通知 OR 交易扣款 OR 成交回報)',
                   'subject:(綜合對帳單 OR 電子帳單 OR 電子對帳單 OR 月對帳單 OR 日對帳單 OR 消費對帳單) -{繳款通知 OR 入帳通知}'];
+// --- Settings --- //
 
 // 0. Main
 function Main(){
+  
+  var Bank_JSON = GetJSON(); // 1-取得銀行資料 JSON
+  
   // 01. Bank_Label
-  for (var i = 0; i < Bank.length; i ++) {
-    var Bank_Label = Bank[i]['label_name'];
-    var Bank_Email = Bank[i]['email'];
-    
+  for (var i = 0; i < Bank_Own.length; i ++) {
+    var Index = Bank_Own[i]
+    var Bank_Label = Bank_JSON[Index]['label_name'];
+    var Bank_Email = Bank_JSON[Index]['email'];
+
     // Feature I: 檢查&建立標籤
     CheckLabel(Bank_Label); 
     // Feature II: 銀行信件標記
@@ -100,7 +107,7 @@ function AutoArchive(){
 function AutoSave(){
   var FolderName = '銀行電子帳單';
   Logger.log('+ 5. 檢查雲端資料夾（' + FolderName + '）是否存在');
-  var ParentFolder = GetFolder_(FolderName);
+  var ParentFolder = GetFold795er_(FolderName); // 2-建立雲端資料夾
   var rule = 'has:attachment is:important label:' + Main_list[2];
   var threads = GmailApp.search(rule);
   for (var i = 0; i < threads.length; i++) {
@@ -120,6 +127,14 @@ function AutoSave(){
   }
 }
 
+// 1-取得銀行資料 JSON
+function GetJSON() {
+  var aUrl = "https://raw.githubusercontent.com/HeiTang/MailCat/dev/config.json";
+  var response = UrlFetchApp.fetch(aUrl);
+  return JSON.parse(response.getContentText());
+}
+
+// 2-建立雲端資料夾
 function GetFolder_(FolderName){
   var Folder;
   var fi = DriveApp.getFoldersByName(FolderName);
