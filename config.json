@@ -25,6 +25,16 @@
       "Service@edm1.cathaysec.com.tw"
     ]
   },
+  "700": {
+    "name": "中華郵政",
+    "label_name": "700 中華郵政",
+    "domain_name": "post",
+    "email":[
+      "mpost@mail.post.gov.tw",
+      "notify@bsns.post.gov.tw",
+      "ebank@mail.post.gov.tw"
+    ]
+  },
   "803": {
     "name": "聯邦銀行",
     "label_name": "803 聯邦銀行",
