@@ -129,7 +129,7 @@ function AutoSave(){
 
 // 1-取得銀行資料 JSON
 function GetJSON() {
-  var aUrl = "https://raw.githubusercontent.com/HeiTang/MailCat/dev/config.json";
+  var aUrl = "https://raw.githubusercontent.com/HeiTang/MailCat/main/config.json";
   var response = UrlFetchApp.fetch(aUrl);
   return JSON.parse(response.getContentText());
 }
