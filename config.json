@@ -139,7 +139,7 @@
   },
   "000": {
     "name": "PayPal",
-    "label_name": "PayPal",
+    "label_name": "000 PayPal",
     "domain_name": "paypal",
     "email":[
       "service@intl.paypal.com",
