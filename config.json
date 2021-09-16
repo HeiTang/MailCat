@@ -137,7 +137,7 @@
       "ebillservice@estatement.linebank.com.tw"
     ]
   },
-  "PayPal": {
+  "000": {
     "name": "PayPal",
     "label_name": "PayPal",
     "domain_name": "paypal",
