@@ -142,7 +142,8 @@
     "label_name": "PayPal",
     "domain_name": "paypal",
     "email":[
-      "service@intl.paypal.com"
+      "service@intl.paypal.com",
+      "paypal@mail.paypal.com"
     ]
   }
 }
