@@ -4,10 +4,7 @@
     "label_name": "008 華南銀行",
     "domain_name": "hncb",
     "email":[
-      "ebillmail@ebmail.hncb.com.tw",
-      "ebillmail@ms3.hncb.com.tw",
-      "service@ms3.hncb.com.tw",
-      "edmservice@hncb.com.tw"
+      "hncb.com.tw"
     ]
   },
   "009": {
@@ -15,8 +12,7 @@
     "label_name": "009 彰化銀行",
     "domain_name": "chb",
     "email":[
-      "Web@mailservice.chb.com.tw",
-      "Web@notify.chb.com.tw"
+      "chb.com.tw"
     ]
   },
   "013": {
@@ -24,14 +20,9 @@
     "label_name": "013 國泰世華",
     "domain_name": "cathaybk",
     "email":[
-      "service@pxbillrc01.cathaybk.com.tw", 
-      "webservice@cathaybk.com.tw",
-      "e-notification@ebill1.cathaysec.com.tw", 
-      "Service@edm2.cathaysec.com.tw", 
-      "service@news.mybank.com.tw", 
-      "etrade@cathaysec.com.tw", 
-      "cathaybk@news.mybank.com.tw",
-      "Service@edm1.cathaysec.com.tw"
+      "cathaybk.com.tw", 
+      "cathaysec.com.tw", 
+      "mybank.com.tw"
     ]
   },
   "053": {
@@ -39,7 +30,7 @@
     "label_name": "053 台中銀行",
     "domain_name": "tcbbank",
     "email":[
-      "message@ebill.tcbbank.com.tw"
+      "tcbbank.com.tw"
     ]
   },
   "397": {
@@ -47,7 +38,7 @@
     "label_name": "397 歐付寶",
     "domain_name": "opay",
     "email":[
-      "sys@ns3.opay.tw"
+      "opay.tw"
     ]
   },
   "700": {
@@ -55,9 +46,7 @@
     "label_name": "700 中華郵政",
     "domain_name": "post",
     "email":[
-      "mpost@mail.post.gov.tw",
-      "notify@bsns.post.gov.tw",
-      "ebank@mail.post.gov.tw"
+      "post.gov.tw"
     ]
   },
   "803": {
@@ -65,15 +54,7 @@
     "label_name": "803 聯邦銀行",
     "domain_name": "ubot",
     "email":[
-      "estatement@ebillv2.card.ubot.com.tw",
-      "MyBankSrv@ubot.com.tw",
-      "ub_notice@cards.ubot.com.tw",
-      "stmnt@ubot.com.tw",
-      "SystemSendMAIL@ubot.com.tw",
-      "UBOTbank@nedm.ubot.com.tw",
-      "Mobile-Payment@ubot.com.tw",
-      "NewNewBank@ubot.com.tw",
-      "UBOT@nedm.ubot.com.tw"
+      "ubot.com.tw"
     ]
   },
   "805": {
@@ -81,10 +62,7 @@
     "label_name": "805 遠東銀行",
     "domain_name": "feib",
     "email":[
-      "service@mailhunter.feib.com.tw",
-      "csr@feib.com.tw",
-      "accountlink.feib@feib.com.tw",
-      "notice@feib.com.tw"
+      "feib.com.tw"
     ]
   },
   "807": {
@@ -92,15 +70,9 @@
     "label_name": "807 永豐銀行",
     "domain_name": "sinopac",
     "email":[
-      "NotifyService@sinopac.com",
-      "mma@sinopac.com",
-      "ecapi@sinopac.com",
-      "ebillservice@newebill.banksinopac.com.tw",
-      "MMA@mx1.edm.sinopac.com",
-      "enews@mx1.edm.sinopac.com",
-      "service.sec@sinopac.com",
-      "service.ec@epaper.sinotrade.com.tw",
-      "return1.ec@epaper.sinotrade.com.tw"
+      "sinopac.com",
+      "banksinopac.com.tw",
+      "sinotrade.com.tw"
     ]
   },
   "812": {
@@ -108,13 +80,8 @@
     "label_name": "812 台新銀行",
     "domain_name": "taishinbank",
     "email":[
-      "webmaster@bhurecv.taishinbank.com.tw",
-      "webmaster@taishinbank.com.tw",
-      "richart@richart.tw",
-      "AclinkMail@taishinbank.com.tw",
-      "TSB@mhurcv.taishinbank.com.tw",
-      "acsotp_code@taishinbank.com.tw",
-      "CCAPP@taishinbank.com.tw"
+      "richart.tw",
+      "taishinbank.com.tw"
     ]
   },
   "822": {
@@ -122,10 +89,7 @@
     "label_name": "822 中國信託",
     "domain_name": "ctbcbank",
     "email":[
-      "ebill@estats.ctbcbank.com",
-      "bank.csc@inib.ctbcbank.com",
-      "bank.csc@inedm.ctbcbank.com",
-      "ba.survey.inos@ctbcbank.com"
+      "ctbcbank.com"
     ]
   },
   "824": {
@@ -133,8 +97,7 @@
     "label_name": "824 連線銀行",
     "domain_name": "linebank",
     "email":[
-      "no-reply.ums@linebank.com.tw",
-      "ebillservice@estatement.linebank.com.tw"
+      "linebank.com.tw"
     ]
   },
   "000": {
@@ -142,8 +105,7 @@
     "label_name": "000 PayPal",
     "domain_name": "paypal",
     "email":[
-      "service@intl.paypal.com",
-      "paypal@mail.paypal.com"
+      "paypal.com"
     ]
   }
 }
