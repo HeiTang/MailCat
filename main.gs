@@ -77,8 +77,8 @@ function MainLabel(Label, Rule, i){
         GmailApp.markThreadsImportant(threads); // 標記為重要
         break;
     }
-    Logger.log("+ 2. " + Label + "已完成標記（" + Count + "）");
   }
+  Logger.log("+ 2. " + Label + "已完成標記（" + Count + "）");
 }
 
 // Feature III: 定時刪除信件（登入通知、驗證信）
