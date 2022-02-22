@@ -1,0 +1,120 @@
+{
+    "008": {
+        "name": "華南銀行",
+        "label_name": "銀行/008 華南銀行",
+        "domain_name": "hncb",
+        "email": [
+            "hncb.com.tw"
+        ]
+    },
+    "009": {
+        "name": "彰化銀行",
+        "label_name": "銀行/009 彰化銀行",
+        "domain_name": "chb",
+        "email": [
+            "chb.com.tw"
+        ]
+    },
+    "013": {
+        "name": "國泰世華",
+        "label_name": "銀行/013 國泰世華",
+        "domain_name": "cathaybk",
+        "email": [
+            "cathaybk.com.tw",
+            "cathaysec.com.tw",
+            "mybank.com.tw"
+        ]
+    },
+    "053": {
+        "name": "台中銀行",
+        "label_name": "銀行/053 台中銀行",
+        "domain_name": "tcbbank",
+        "email": [
+            "tcbbank.com.tw"
+        ]
+    },
+    "397": {
+        "name": "歐付寶",
+        "label_name": "銀行/397 歐付寶",
+        "domain_name": "opay",
+        "email": [
+            "opay.tw"
+        ]
+    },
+    "700": {
+        "name": "中華郵政",
+        "label_name": "銀行/700 中華郵政",
+        "domain_name": "post",
+        "email": [
+            "post.gov.tw"
+        ]
+    },
+    "803": {
+        "name": "聯邦銀行",
+        "label_name": "銀行/803 聯邦銀行",
+        "domain_name": "ubot",
+        "email": [
+            "ubot.com.tw"
+        ]
+    },
+    "805": {
+        "name": "遠東銀行",
+        "label_name": "銀行/805 遠東銀行",
+        "domain_name": "feib",
+        "email": [
+            "feib.com.tw"
+        ]
+    },
+    "807": {
+        "name": "永豐銀行",
+        "label_name": "銀行/807 永豐銀行",
+        "domain_name": "sinopac",
+        "email": [
+            "sinopac.com",
+            "banksinopac.com.tw",
+            "sinotrade.com.tw"
+        ]
+    },
+    "812": {
+        "name": "台新銀行",
+        "label_name": "銀行/812 台新銀行",
+        "domain_name": "taishinbank",
+        "email": [
+            "richart.tw",
+            "taishinbank.com.tw"
+        ]
+    },
+    "815": {
+        "name": "日盛銀行",
+        "label_name": "銀行/815 日盛銀行",
+        "domain_name": "jihsunbank",
+        "email": [
+            "jsun.com",
+            "jihsun.com.tw"
+        ]
+    },
+    "822": {
+        "name": "中國信託",
+        "label_name": "銀行/822 中國信託",
+        "domain_name": "ctbcbank",
+        "email": [
+            "ctbcbank.com"
+        ]
+    },
+    "824": {
+        "name": "連線銀行",
+        "label_name": "銀行/824 連線銀行",
+        "domain_name": "linebank",
+        "email": [
+            "linebank.com.tw"
+        ]
+    },
+    "000": {
+        "name": "PayPal",
+        "label_name": "銀行/000 PayPal",
+        "domain_name": "paypal",
+        "email": [
+            "paypal.com"
+        ]
+    }
+}

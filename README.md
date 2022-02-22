@@ -65,9 +65,9 @@ MailCat 是一個以 Google Apps Script 開發的一套規則管理器。不同�
 
 1. 登入 Google 帳戶並且開啟 [Apps Script](https://script.google.com/home/start) 頁面。 
 
-2. 建立新專案，然後將 [`main.gs`](https://github.com/HeiTang/MailCat/blob/main/main.gs) 檔案複製進去並存檔。
+2. 建立新專案，然後將 [`main.gs`](https://github.com/HeiTang/MailCat/blob/main/main.gs) 和 [`bank.gs`](https://github.com/HeiTang/MailCat/blob/main/bank.gs) 檔案複製進去並存檔。
 
-3. 在 `main.gs` 中的 `Bank_Own` 中填入需管理的銀行代碼（請參考上述所支援銀行）。
+3. 在 `bank.gs` 中的 `BankList_Own` 中填入需管理的銀行代碼（請參考上述所支援銀行）。
 
    範例：
     
