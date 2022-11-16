@@ -1,4 +1,13 @@
 {
+    "007": {
+        "name": "第一銀行",
+        "label_name": "銀行/007 第一銀行",
+        "domain_name": "firstbank",
+        "email": [
+            "firstbank.com.tw",
+            "firstbank.tw"
+        ]
+    },
     "008": {
         "name": "華南銀行",
         "label_name": "銀行/008 華南銀行",
@@ -13,6 +22,14 @@
         "domain_name": "chb",
         "email": [
             "chb.com.tw"
+        ]
+    },
+    "012": {
+        "name": "台北富邦銀行",
+        "label_name": "銀行/012 富邦銀行",
+        "domain_name": "taipeifubon",
+        "email": [
+            "taipeifubon.com.tw"
         ]
     },
     "013": {
