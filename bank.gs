@@ -8,6 +8,7 @@ var BankRule_Url = "https://raw.githubusercontent.com/HeiTang/MailCat/main/bank_
 var BankList_JSON = GetJSON(BankList_Url); // 1-取得銀行資料 JSON
 var BankRule_JSON = GetJSON(BankRule_Url);
 
+
 // 1. MailLabelManage
 function Bank_Label(){
   // 01. BankListLabel
@@ -15,26 +16,26 @@ function Bank_Label(){
   var data_type = 1;
   for (var i = 0; i < BankList_Own.length; i++) {
     var index = BankList_Own[i];
-    var label_name = BankList_JSON[index]['label_name'];
+    var bank_label_name = BankList_JSON[index]['label_name'];
     var bank_email = BankList_JSON[index]['email'];
 
     // 檢查&建立標籤
-    CheckLabel(label_name); 
+    CheckLabel(bank_label_name); 
     // 銀行信件標記
-    MarkLabel(label_name, bank_email, data_type, isImportant[i]);
-  }
-  
-  // 02. BankRuleLabel // 0.登入通知 1.交易通知 2.電子帳單
-  var isImportant = [0, 0, 1];
-  var data_type = 2;
-  for (var i = 0; i < BankRule_JSON.length; i++) {
-    var label_name = BankRule_JSON[i]['label_name'];
-    var bank_rule = BankRule_JSON[i]['rule']; 
-    
-    // 檢查&建立標籤
-    CheckLabel(label_name); 
-    // 特定信件標記
-    MarkLabel(label_name, bank_rule, data_type, isImportant[i]);
+    MarkLabel(bank_label_name, bank_email, data_type, isImportant[i]);
+
+    // 02. BankRuleLabel // 0.登入通知 1.交易通知 2.電子帳單
+    var isImportant = [0, 0, 1];
+    var data_type = 2;
+    for (var i = 0; i < BankRule_JSON.length; i++) {
+      var label_name = BankRule_JSON[i]['label_name'];
+      var bank_rule = BankRule_JSON[i]['rule'];
+      bank_rule = [Utilities.formatString("label:%s %s",bank_label_name , bank_rule)];
+      // 檢查&建立標籤
+      CheckLabel(label_name); 
+      // 特定信件標記
+      MarkLabel(label_name, bank_rule, data_type, isImportant[i]);
+    }
   }
 }
 
