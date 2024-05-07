@@ -38,6 +38,22 @@ function CreateNestedLabel(label_name) {
   }
 }
 
+// M3-1 - 依標籤類型分類
+// https://github.com/HeiTang/MailCat/pull/11
+function BankRuleLabel (bank_label) {
+    var isImportant = [0, 0, 1];
+    var data_type = 2;
+    for (var i = 0; i < BankRule_JSON.length; i++) {
+    var label_name = BankRule_JSON[i]['label_name'];
+    var bank_rule = BankRule_JSON[i]['rule'];
+    if (bank_label) bank_rule = [Utilities.formatString("label:%s %s", bank_label , bank_rule)];
+    // 檢查&建立標籤
+    CheckLabel(label_name); 
+    // 特定信件標記
+    MarkLabel(label_name, bank_rule, data_type, isImportant[i]);
+  }
+}
+
 // M3-信件標記（信件來源、信件類型）
 function MarkLabel(label_name, label_factor, data_type, isImportant) {
   var label = GmailApp.getUserLabelByName(label_name);

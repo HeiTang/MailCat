@@ -25,36 +25,12 @@ function Bank_Label(){
     // 銀行信件標記
     MarkLabel(bank_label_name, bank_email, data_type, isImportant[i]);
 
-    // 02. BankRuleLabel // 0.登入通知 1.交易通知 2.電子帳單
-    var isImportant = [0, 0, 1];
-    var data_type = 2;
-    if (!Mark_All) {
-      for (var i = 0; i < BankRule_JSON.length; i++) {
-        var label_name = BankRule_JSON[i]['label_name'];
-        var bank_rule = BankRule_JSON[i]['rule'];
-        bank_rule = [Utilities.formatString("label:%s %s",bank_label_name , bank_rule)];
-        // 檢查&建立標籤
-        CheckLabel(label_name); 
-        // 特定信件標記
-        MarkLabel(label_name, bank_rule, data_type, isImportant[i]);
-      }
-    }
+    if (!Label_All) BankRuleLabel(bank_label_name);
+
   }
-  
-  if(Mark_All) {
-    // 02. BankRuleLabel // 0.登入通知 1.交易通知 2.電子帳單
-    var isImportant = [0, 0, 1];
-    var data_type = 2;
-    for (var i = 0; i < BankRule_JSON.length; i++) {
-      var label_name = BankRule_JSON[i]['label_name'];
-      var bank_rule = BankRule_JSON[i]['rule']; 
-      
-      // 檢查&建立標籤
-      CheckLabel(label_name); 
-      // 特定信件標記
-      MarkLabel(label_name, bank_rule, data_type, isImportant[i]);
-    }
-  }
+
+  if (Label_All) BankRuleLabel("");
+
 }
 
 // 2. 定時刪除信件（登入通知）
