@@ -15,7 +15,7 @@ function Bank_Label(){
   // 01. BankListLabel
   var isImportant = [0, 0, 0];
   var data_type = 1;
-  for (var i = 0; i < BankList_Own.length; i++) {
+  for (var bankIndex = 0; bankIndex < BankList_Own.length; bankIndex++) {
     var index = BankList_Own[i];
     var bank_label_name = BankList_JSON[index]['label_name'];
     var bank_email = BankList_JSON[index]['email'];
@@ -28,7 +28,7 @@ function Bank_Label(){
     // 02. BankRuleLabel // 0.登入通知 1.交易通知 2.電子帳單
     var isImportant = [0, 0, 1];
     data_type = 2;
-    for (var i = 0; i < BankRule_JSON.length; i++) {
+    for (var ruleIndex = 0; ruleIndex < BankRule_JSON.length; ruleIndex++) {
       var label_name = BankRule_JSON[i]['label_name'];
       // var bank_rule = BankRule_JSON[i]['rule'];
       var bank_rule = [Utilities.formatString("label:%s %s", bank_label_name , BankRule_JSON[i]['rule'])];
