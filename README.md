@@ -93,9 +93,3 @@ MailCat 是一個以 Google Apps Script 開發的一套規則管理器。不同�
    > 參考設定，可自行調整。
 
 5. 如果尚未支援您的銀行，歡迎來發個 PR ~(=^‥^)/
-
-## 設定
-
-   |    變數    | 型態 | 預設值 | 說明 |  
-   | :-------: | :--: | :---: | :--------: |
-   | Label_All | boolean   | true | 當 `Label_All` 設定為 `true` 時，標記所有符合條件的文件，當 `label_all` 設定為 false 時僅標記 `BankList_Own` 指定的銀行 |
