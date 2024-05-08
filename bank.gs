@@ -29,6 +29,12 @@ function Bank_Label(){
     var isImportant = [0, 0, 1];
     var data_type = 2;
     for (var i = 0; i < BankRule_JSON.length; i++) {
+      var label_name = BankRule_JSON[i]['label_name'];
+      // var bank_rule = BankRule_JSON[i]['rule'];
+      var bank_rule = [Utilities.formatString("label:%s %s", bank_label_name , BankRule_JSON[i]['rule'])];
+      // 檢查&建立標籤
+      CheckLabel(label_name); 
+      // 特定信件標記
       MarkLabel(label_name, bank_rule, data_type, isImportant[i]);
     }
   }
