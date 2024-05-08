@@ -11,10 +11,11 @@ var BankRule_JSON = GetJSON(BankRule_Url);
 
 // 1. MailLabelManage
 function Bank_Label(){
-  // 01. BankListLabel
-  var isImportant = [0, 0, 0];
-  var data_type = 1;
+
   for (var bankIndex = 0; bankIndex < BankList_Own.length; bankIndex++) {
+    // 01. BankListLabel
+    var isImportant = [0, 0, 0];
+    var data_type = 1;
     var index = BankList_Own[bankIndex];
     var bank_label_name = BankList_JSON[index]['label_name'];
     var bank_email = BankList_JSON[index]['email'];
@@ -29,8 +30,8 @@ function Bank_Label(){
     data_type = 2;
     for (var ruleIndex = 0; ruleIndex < BankRule_JSON.length; ruleIndex++) {
       var label_name = BankRule_JSON[ruleIndex]['label_name'];
-      // var bank_rule = BankRule_JSON[ruleIndex]['rule'];
       var bank_rule = [Utilities.formatString("label:%s %s", bank_label_name , BankRule_JSON[ruleIndex]['rule'])];
+      
       // 檢查&建立標籤
       CheckLabel(label_name); 
       // 特定信件標記
