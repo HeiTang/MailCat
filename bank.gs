@@ -2,7 +2,6 @@
 var BankList_Own = []
 var BankList_Url = "https://raw.githubusercontent.com/HeiTang/MailCat/main/bank_list.json";
 var BankRule_Url = "https://raw.githubusercontent.com/HeiTang/MailCat/main/bank_rule.json";
-var Label_All = true;
 // --- Settings --- //
 
 // 0. Initial
