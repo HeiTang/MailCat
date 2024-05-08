@@ -15,26 +15,26 @@ function Bank_Label(){
   var isImportant = [0, 0, 0];
   var data_type = 1;
   for (var bankIndex = 0; bankIndex < BankList_Own.length; bankIndex++) {
-    var index = BankList_Own[i];
+    var index = BankList_Own[bankIndex];
     var bank_label_name = BankList_JSON[index]['label_name'];
     var bank_email = BankList_JSON[index]['email'];
 
     // 檢查&建立標籤
     CheckLabel(bank_label_name); 
     // 銀行信件標記
-    MarkLabel(bank_label_name, bank_email, data_type, isImportant[i]);
+    MarkLabel(bank_label_name, bank_email, data_type, isImportant[bankIndex]);
 
     // 02. BankRuleLabel // 0.登入通知 1.交易通知 2.電子帳單
     var isImportant = [0, 0, 1];
     data_type = 2;
     for (var ruleIndex = 0; ruleIndex < BankRule_JSON.length; ruleIndex++) {
-      var label_name = BankRule_JSON[i]['label_name'];
-      // var bank_rule = BankRule_JSON[i]['rule'];
-      var bank_rule = [Utilities.formatString("label:%s %s", bank_label_name , BankRule_JSON[i]['rule'])];
+      var label_name = BankRule_JSON[ruleIndex]['label_name'];
+      // var bank_rule = BankRule_JSON[ruleIndex]['rule'];
+      var bank_rule = [Utilities.formatString("label:%s %s", bank_label_name , BankRule_JSON[ruleIndex]['rule'])];
       // 檢查&建立標籤
       CheckLabel(label_name); 
       // 特定信件標記
-      MarkLabel(label_name, bank_rule, data_type, isImportant[i]);
+      MarkLabel(label_name, bank_rule, data_type, isImportant[ruleIndex]);
     }
   }
 }
