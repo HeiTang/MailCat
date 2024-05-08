@@ -27,7 +27,7 @@ function Bank_Label(){
 
     // 02. BankRuleLabel // 0.登入通知 1.交易通知 2.電子帳單
     var isImportant = [0, 0, 1];
-    var data_type = 2;
+    data_type = 2;
     for (var i = 0; i < BankRule_JSON.length; i++) {
       var label_name = BankRule_JSON[i]['label_name'];
       // var bank_rule = BankRule_JSON[i]['rule'];
