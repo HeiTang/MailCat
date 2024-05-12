@@ -51,6 +51,14 @@
             "tcbbank.com.tw"
         ]
     },
+    "081": {
+        "name": "匯豐銀行",
+        "label_name": "銀行/081 匯豐銀行",
+        "domain_name": "hsbc",
+        "email": [
+            "hsbc.com.tw"
+        ]
+    },
     "397": {
         "name": "歐付寶",
         "label_name": "銀行/397 歐付寶",
@@ -91,6 +99,14 @@
             "sinopac.com",
             "banksinopac.com.tw",
             "sinotrade.com.tw"
+        ]
+    },
+    "808": {
+        "name": "玉山銀行",
+        "label_name": "銀行/808 玉山銀行",
+        "domain_name": "esunbank",
+        "email": [
+            "esunbank.com.tw"
         ]
     },
     "810": {
