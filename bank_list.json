@@ -59,14 +59,6 @@
             "hsbc.com.tw"
         ]
     },
-    "397": {
-        "name": "歐付寶",
-        "label_name": "銀行/397 歐付寶",
-        "domain_name": "opay",
-        "email": [
-            "opay.tw"
-        ]
-    },
     "700": {
         "name": "中華郵政",
         "label_name": "銀行/700 中華郵政",
@@ -159,5 +151,21 @@
         "email": [
             "paypal.com"
         ]
-    }
+    },
+    "391": {
+        "name": "iPASS MONEY",
+        "label_name": "電子支付/391 iPASS MONEY",
+        "domain_name": "i-pass",
+        "email": [
+            "i-pass.com.tw"
+        ]
+    },
+    "397": {
+        "name": "歐付寶 O'Pay",
+        "label_name": "電子支付/397 歐付寶 O'Pay",
+        "domain_name": "opay",
+        "email": [
+            "opay.tw"
+        ]
+    },
 }
