@@ -43,6 +43,14 @@
             "mybank.com.tw"
         ]
     },
+    "017": {
+        "name": "兆豐銀行",
+        "label_name": "銀行/017 兆豐銀行",
+        "domain_name": "megabank",
+        "email": [
+            "megabank.com.tw"
+        ]
+    },
     "053": {
         "name": "台中銀行",
         "label_name": "銀行/053 台中銀行",
