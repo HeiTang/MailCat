@@ -81,6 +81,7 @@ const supportBanks = { '013-國泰世華': Parse013 }
 
 function Bank_Parse() {
   const parsedLabel = '銀行/已建檔'
+  CheckLabel(parsedLabel)
   for (const [bank, parser] of Object.entries(supportBanks)) {
     const rule = Utilities.formatString("label:銀行-%s label:銀行-1.交易通知 subject: 消費彙整通知 NOT label:銀行/已建檔", bank)
 
