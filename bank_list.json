@@ -67,6 +67,14 @@
             "hsbc.com.tw"
         ]
     },
+    "108": {
+        "name": "陽信銀行",
+        "label_name": "銀行/108 陽信銀行",
+        "domain_name": "sunnybank",
+        "email": [
+            "sunnybank.com.tw"
+        ]
+    },
     "700": {
         "name": "中華郵政",
         "label_name": "銀行/700 中華郵政",
