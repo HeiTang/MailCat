@@ -51,6 +51,14 @@
             "megabank.com.tw"
         ]
     },
+    "048": {
+        "name": "王道銀行",
+        "label_name": "銀行/048 王道銀行",
+        "domain_name": "megabank",
+        "email": [
+            "megabank.com.tw"
+        ]
+    },
     "053": {
         "name": "台中銀行",
         "label_name": "銀行/053 台中銀行",
