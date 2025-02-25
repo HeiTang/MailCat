@@ -54,9 +54,9 @@
     "048": {
         "name": "王道銀行",
         "label_name": "銀行/048 王道銀行",
-        "domain_name": "megabank",
+        "domain_name": "o-bank",
         "email": [
-            "megabank.com.tw"
+            "service.o-bank.com"
         ]
     },
     "053": {
