@@ -1,0 +1,44 @@
+name: Publish JSON to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "bank_list.json"
+      - "bank_rule.json"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Copy JSON into publish dir
+        run: |
+          mkdir public
+          cp bank_list.json public/
+          cp bank_rule.json public/
+          touch public/.nojekyll     # 關閉 Jekyll，保證檔名不被處理
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v2
+        with:
+          path: public
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2
