@@ -1,11 +1,18 @@
 name: Publish JSON to GitHub Pages
 
+env:
+  CNAME_DOMAIN: mailcat.purr.tw
+  API_VERSION: 1
+  BANK_LIST_JSON: bank_list.json
+  BANK_RULE_JSON: bank_rule.json
+
 on:
   push:
     branches: [main]
     paths:
       - "bank_list.json"
       - "bank_rule.json"
+      - ".github/workflows/pages.yml"
   workflow_dispatch:
 
 permissions:
@@ -21,12 +28,14 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Copy JSON into publish dir
+      - name: Copy JSON into versioned folder
         run: |
-          mkdir public
-          cp bank_list.json public/
-          cp bank_rule.json public/
-          touch public/.nojekyll     # 關閉 Jekyll，保證檔名不被處理
+          echo "→ Publishing under: v${API_VERSION}/"
+          mkdir -p public/v${API_VERSION}
+          cp ${BANK_LIST_JSON} public/v${API_VERSION}/
+          cp ${BANK_RULE_JSON} public/v${API_VERSION}/
+          echo "${{ env.CNAME_DOMAIN }}" > public/CNAME
+          touch public/.nojekyll
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
