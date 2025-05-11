@@ -1,22 +1,61 @@
 <div align="center">
-  <h1>MailCat</h1>
-  
-  <a href="https://github.com/HeiTang/MailCat/blob/main/LICENSE">
-    <img src="https://img.shields.io/github/license/HeiTang/MailCat?color=orange">
-  </a>
-  <a href="https://github.com/HeiTang/MailCat/releases">
-    <img src="https://img.shields.io/github/v/release/HeiTang/MailCat?color=brightgreen">
-  </a>
-  <a href="https://github.com/HeiTang/MailCat">
-    <img src="https://img.shields.io/github/repo-size/HeiTang/MailCat">
-  </a>
-  <a href="https://github.com/HeiTang/MailCat">
-    <img src="https://img.shields.io/github/stars/HeiTang/MailCat?color=ff69b4">
-  </a>
-  <br><br>
-  <img src="https://raw.githubusercontent.com/HeiTang/MailCat/main/demo/page.png">
-  <p>- - -</p>
-  <p><i>“ Gmail 自動化管理工具！ ”</i></p>
+
+  <!-- Logo -->
+  <img 
+    src="./docs/assets/mailcat_icon.png" 
+    width="120" 
+    alt="MailCat logo"
+  />
+
+  <!-- Title -->
+  <h1 style="margin: 16px 0 8px;">
+    MailCat
+  </h1>
+
+  <!-- Badges -->
+  <p>
+    <a href="https://github.com/HeiTang/MailCat/blob/main/LICENSE">
+      <img 
+        src="https://img.shields.io/github/license/HeiTang/MailCat?color=orange" 
+        alt="License" 
+      />
+    </a>
+    <a href="https://github.com/HeiTang/MailCat/releases">
+      <img 
+        src="https://img.shields.io/github/v/release/HeiTang/MailCat?color=brightgreen" 
+        alt="Release Version" 
+      />
+    </a>
+    <a href="https://github.com/HeiTang/MailCat">
+      <img 
+        src="https://img.shields.io/github/repo-size/HeiTang/MailCat" 
+        alt="Repo Size" 
+      />
+    </a>
+    <a href="https://github.com/HeiTang/MailCat">
+      <img 
+        src="https://img.shields.io/github/stars/HeiTang/MailCat?color=ff69b4" 
+        alt="GitHub Stars" 
+      />
+    </a>
+  </p>
+
+
+
+  <!-- Separator & Tagline -->
+  <!-- <hr style="width: 40%; margin: 24px auto;" /> -->
+  <h3>終結 Gmail 混亂的貓咪英雄！₍˄•༝•˄₎◞✩︎ </h3>
+  <p style="font-style: italic;">
+    “養了這隻貓，從此再也不用假裝沒看到銀行帳單了。”  
+  </p>
+
+  <!-- Demo Image -->
+  <p>
+    <img 
+      src="./docs/assets/gmail_demo.png" 
+      alt="MailCat Demo Screenshot" 
+    />
+  </p>
 </div>
 
 ## 說明
