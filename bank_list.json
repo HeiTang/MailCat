@@ -107,6 +107,15 @@
             "feib.com.tw"
         ]
     },
+    "806": {
+        "name": "元大銀行",
+        "label_name": "銀行/806 元大銀行",
+        "domain_name": "yuantabank",
+        "email": [
+            "yuantabank.tw",
+            "yuantabank.com.tw"
+        ]
+    },
     "807": {
         "name": "永豐銀行",
         "label_name": "銀行/807 永豐銀行",
