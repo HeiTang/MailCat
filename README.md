@@ -116,11 +116,15 @@ MailCat 是一個以 Google Apps Script 開發的一套規則管理器。不同�
 - 主要針對電子帳單的信件。
 - MailCat 會將資料夾建立在 Google Drive 的根目錄下。
 
+### 6. 解析消費通知
+- 目前只支援國泰銀行
+- MailCat 會把新的消費通知的內容統整到一個 Google Spreadsheet 內
+
 ## 使用方法
 
 1. 登入 Google 帳戶並且開啟 [Apps Script](https://script.google.com/home/start) 頁面。
 
-2. 建立新專案，然後將 [`main.gs`](https://github.com/HeiTang/MailCat/blob/main/main.gs) 和 [`bank.gs`](https://github.com/HeiTang/MailCat/blob/main/bank.gs) 檔案複製進去並存檔。
+2. 建立新專案，然後將 [`main.gs`](https://github.com/HeiTang/MailCat/blob/main/main.gs) 、 [`bank.gs`](https://github.com/HeiTang/MailCat/blob/main/bank.gs) 和 [`parse.gs`](https://github.com/HeiTang/MailCat/blob/main/parse.gs) 檔案複製進去並存檔。
 
 3. 在 `bank.gs` 中的 `BankList_Own` 中填入需管理的銀行代碼（請參考上述所支援銀行）。
 
@@ -130,7 +134,11 @@ MailCat 是一個以 Google Apps Script 開發的一套規則管理器。不同�
    var BankList_Own = ['008', '013', '803', '805', '807', '812', '822', '824'];
    ```
 
-4. 選擇「觸發條件」點選「新增觸發條件」。
+4. 在 Google 建立一個新的試算表，修改 `bank.gs` 中的 `SheetID`，改成試算表的 ID。ID 可以在網址 `https://docs.google.com/spreadsheets/d/<SheetID>` 中找到。
+
+5. 在 Google AppSript 專案頁面中左側找到「資料庫」，按下他旁邊的「+」，在彈出式視窗輸入指令碼 ID `1ReeQ6WO8kKNxoaA_O0XEQ589cIrRvEBA9qcWpNqdOP17i47u6N9M5Xh0`，按下「新增」按鈕 Cheerio
+
+6. 選擇「觸發條件」點選「新增觸發條件」。
 
    |    執行的功能    | 部署作業 | 活動來源 | 時間型觸發條件類型 |    小時間隔    |
    | :--------------: | :------: | :------: | :----------------: | :------------: |
@@ -138,7 +146,8 @@ MailCat 是一個以 Google Apps Script 開發的一套規則管理器。不同�
    | Bank_AutoRemove  |   上端   | 時間驅動 |      日計時器      | 午夜到上午一點 |
    | Bank_AutoArchive |   上端   | 時間驅動 |     小時計時器     |     每小時     |
    |  Bank_AutoSave   |   上端   | 時間驅動 |      日計時器      | 午夜到上午一點 |
+   |  Bank_Parse      |   上端   | 時間驅動 |      日計時器      | 午夜到上午一點 |
 
    > 參考設定，可自行調整。
 
-5. 如果尚未支援您的銀行，歡迎來發個 PR ~(=^‥^)/
+7. 如果尚未支援您的銀行，歡迎來發個 PR ~(=^‥^)/
